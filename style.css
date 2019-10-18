@@ -32,6 +32,7 @@ a:hover { color:rgba(0,0,0,0.5); }
     position:relative;
     z-index:-100;
     object-fit:cover;
+    padding-top: 54px;
 }
 
 /*header menu*/
@@ -42,6 +43,7 @@ a:hover { color:rgba(0,0,0,0.5); }
     list-style:none;
     z-index:100;
     transition:0.5s;
+    position: fixed;
 }
 
 /*header logo*/
@@ -52,6 +54,10 @@ a:hover { color:rgba(0,0,0,0.5); }
     position:absolute;
     line-height:54px;
     z-index:100;
+}
+
+.humburger-menu{
+    float:right;
 }
 
 /*herder__menu__content__right*/
@@ -205,7 +211,7 @@ a:hover { color:rgba(0,0,0,0.5); }
     height:40px;
 }
 .about__main__skill__peace__box__gage{
-    background:#C0A0A0;
+    background:antiquewhite;
     height:39px;
 }
 .about__main__skill__peace__box__gage.-high{
@@ -352,7 +358,7 @@ a:hover { color:rgba(0,0,0,0.5); }
 /*-----------contact----------*/
 .contact{
     width:96vw;
-    height:500px;
+    height:400px;
     text-align:center;
     clear:both;
     margin-bottom:100px:
@@ -502,34 +508,56 @@ a:hover { color:rgba(0,0,0,0.5); }
 }
 }
 
+/*----------------------メニューバー切り替え-------------------*/
+
+@media screen and (max-width: 600px) {
+.icon-humburger{
+    float: right;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    padding-right: 15px;
+}
+.icon-humburger span{
+    display: block;
+    padding: 5px 5px;
+    width: 30px;
+    height: 1px;
+    border-bottom: solid 1px;
+}
+.icon-humburger:hover{
+    opacity:0.4;
+}
+.humburger-menu{
+    width:200px;
+    height:350px;
+    position: absolute;
+    right: 0;
+}
+.herder__menu__content.-sns{
+    clear:both;
+    display: none;
+    margin-top: 50px;
+    margin-right: 60px;
+}
+.herder__menu__content.-menu{
+    clear:both;
+    display: none;
+    margin-right: 55px;
+}
+.herder__menu__content.-menu__content{
+    clear: both;
+}
+}
+
 /*----------------------スマホ対応---------------------------*/
 
 @media screen and (max-width: 499px) {
-
-/*-----------------header-------------------*/
-/*herder menu menu*/
-.herder__menu__content.-menu{
-    width:280px;
-    height:25px;
-    margin-bottom:10px;
-    margin-right:10px;
-}
-    
-.herder__menu__content.-menu__content{
-    height:25px;
-}
-    
-/*header menu sns*/
-.herder__menu__content.-sns{
-    width:400px;
-    height:16px;
-    margin-top:10px;
-}
 /*-------------------About--------------------*/
 /*about main*/
 .about__main{
-    width:400px;
-    height:900px;
+    width:350px;
+    height:800px;
     margin-bottom:100px;
     clear:both;
 }
@@ -538,24 +566,24 @@ a:hover { color:rgba(0,0,0,0.5); }
 .about__photobox{
     display:inherit;
     clear:both;
-    width:400px;
+    width:350px;
     margin:0 auto;
 }
     
 .about__photobox__photo1{
-    width:400px;
+    width:350px;
     margin:0 auto;
     margin-bottom:5px;
 }
     
 .about__photobox__photo2{
-    width:400px;
+    width:350px;
     margin:0 auto;
 }
 
 /*about main content*/
 .about__main__content{
-    width:400px;
+    width:350px;
     height:auto;
     margin:0 auto;
     clear:both;
@@ -563,17 +591,17 @@ a:hover { color:rgba(0,0,0,0.5); }
 
 /*about__main__txt*/
 .about__main__txt{
-    width:400px;
+    width:350px;
 }
 
 /*about main skill*/
 .about__main__skill{
-    width:400px;
+    width:350px;
 }
 
 .about__main__skill__peace{
-    padding-right:10px;
-    width:120px;
+    padding-right:6.5px;
+    width:110px;
 }
 .about__main__skill__peace.-br{
     clear:both;
@@ -612,14 +640,14 @@ a:hover { color:rgba(0,0,0,0.5); }
 
 /*works content*/
 .works__content{
-    width:400px;
+    width:350px;
     height:500px;
     margin:0 auto;
     margin-bottom:50px
 }
 
 .works__content__image{
-    width:400px;
+    width:350px;
     height:250px;
 }
 
@@ -634,7 +662,7 @@ a:hover { color:rgba(0,0,0,0.5); }
 }
 
 .works__content__txt{
-    width:400px;
+    width:350px;
     margin-top:40px;
 }
 

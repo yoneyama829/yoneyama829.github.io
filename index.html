@@ -80,6 +80,24 @@
                     });
                 });
             });
+            // ハンバーガーメニュー
+            $(function(){
+                $('.icon-humburger').on('click', function(){
+                    if($('.herder__menu__content.-menu').css('display') === 'block') {
+                        $('.herder__menu__content.-menu').slideUp('1500');
+                        $('.herder__menu__content.-sns').slideUp('1500');
+                        $('.humburger-menu').css({
+                            'background-color': 'rgba(0,0,0,0)'
+                        });
+                    }else{
+                        $('.herder__menu__content.-menu').slideDown('1500');
+                        $('.herder__menu__content.-sns').slideDown('1500');
+                        $('.humburger-menu').css({
+                            'background-color': 'antiquewhite'
+                        });
+                    }
+                });
+            });
         </script>
     </head>
     <body>
@@ -88,15 +106,22 @@
         <header class="header">
             <div class="header__menu">
                 <p class="header__logo">Hello</p>
-                <div class="herder__menu__content -sns">
-                    <img class="herder__menu__content -sns__icon -twitter" src="image/twitter.png">
-                    <img class="herder__menu__content -sns__icon" src="image/insta.png">
-                </div>
-                <div class="herder__menu__content -menu">
-                    <a class="herder__menu__content -menu__content" href="#contact__jump">/CONTACT</a>
-                    <a class="herder__menu__content -menu__content" href="#works__jump">/WORKS</a>
-                    <a class="herder__menu__content -menu__content" href="#service__jump">/SERVICE</a>
-                    <a class="herder__menu__content -menu__content" href="#about__jump">/ABOUT</a>
+                <div class="humburger-menu">
+                    <div class="icon-humburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="herder__menu__content -sns">
+                        <img class="herder__menu__content -sns__icon -twitter" src="image/twitter.png">
+                        <img class="herder__menu__content -sns__icon" src="image/insta.png">
+                    </div>
+                    <div class="herder__menu__content -menu">
+                        <a class="herder__menu__content -menu__content" href="#contact__jump">/CONTACT</a>
+                        <a class="herder__menu__content -menu__content" href="#works__jump">/WORKS</a>
+                        <a class="herder__menu__content -menu__content" href="#service__jump">/SERVICE</a>
+                        <a class="herder__menu__content -menu__content" href="#about__jump">/ABOUT</a>
+                    </div>
                 </div>
             </div>
             <img class="header__back" src="image/header3.jpg">
@@ -117,12 +142,11 @@
                 <div class="about__main__content">
                     <p class="about__main__name">Yoneyama Kazusa</p>
                     <p class="about__main__txt">
-                        神奈川にて会社員としてシステムエンジニアの
+                        東京にて会社員としてシステムエンジニアの
                         お仕事と個人でのweb制作をしております。<br><br>
                         2018年4月よりプログラミングスクールにて
                         Java・HTML・CSS等を学習。チームでショッピングサイトを構築する。<br>
-                        2018年8月より業務システムの開発プロジェクトに参画。
-                        テスト・バグ改修を担当。<br>
+                        2018年8月より業務システムの開発プロジェクトに参画。<br>
                         2019年よりweb制作を始める。
                     </p>
                     <div class="about__main__skill">
