@@ -540,13 +540,14 @@ a:hover { color:rgba(0,0,0,0.5); }
     margin-top: 50px;
     margin-right: 60px;
 }
-.herder__menu__content.-menu{
-    clear:both;
-    display: none;
-    margin-right: 55px;
-}
 .herder__menu__content.-menu__content{
     clear: both;
+}
+.herder__menu__content.-menu{
+    width:80px;
+    float: right;
+    display: none;
+    margin-right: 55px;
 }
 }
 
