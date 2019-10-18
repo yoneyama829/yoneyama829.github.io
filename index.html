@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta http-equiv="content-type" charaset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>portforio</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+        <!-- jQuery.jsの読み込み -->
+        <script type="text/javascript" src = " https://code.jquery.com/jquery-1.8.0.min.js " src="scroll.js"></script>
+
+        <script>
+            // スムーズスクロール
+            $(function(){
+               $('a[href^=#]').click(function() {
+                  var speed = 400;
+                  var href= $(this).attr("href");
+                  var target = $(href == "#" || href == "" ? 'html' : href);
+                  var position = target.offset().top;
+                  $('body,html').animate({scrollTop:position}, speed, 'swing');
+                  return false;
+               });
+            });
+            // ヘッダー背景制御
+            $(function(){
+                var headernav=$(".header__menu");
+                $(window).on('scroll',function(){
+                    headernav.each(function(){
+                        var scroll=$(window).scrollTop();
+                        if(scroll > 400){
+                            $(this).css({
+                                'background':'rgba(255,255,255,1)'
+                            });
+                        }else{
+                            $(this).css({
+                                'background':'rgba(255,255,255,0)'
+                            });
+                        }
+                    });
+                });
+            });
+            // topボタン表示制御
+            $(function(){
+                var toheader=$(".header__jump");
+                $(window).on('scroll',function(){
+                    toheader.each(function(){
+                        var scroll=$(window).scrollTop();
+                        if(scroll > 600){
+                            $(this).css({
+                                'opacity':'1'
+                            });
+                        }else{
+                            $(this).css({
+                                'opacity':'0'
+                            });
+                        }
+                    });
+                });
+            });
+            //　スキルゲージ制御
+            $(function(){
+                var highgage=$(".about__main__skill__peace__box__gage.-high");
+                $(window).on('scroll',function(){
+                    highgage.each(function(){
+                        var scroll=$(window).scrollTop();
+                        if(scroll > 600){
+                            $(this).css({
+                                'width':'60%'
+                            });
+                        }
+                    });
+                var lowgage=$(".about__main__skill__peace__box__gage.-low");
+                lowgage.each(function(){
+                    var scroll=$(window).scrollTop();
+                        if(scroll > 600){
+                            $(this).css({
+                                'width':'30%'
+                            });
+                        }
+                    });
+                });
+            });
+        </script>
+    </head>
+    <body>
+        
+<!--        header-->
+        <header class="header">
+            <div class="header__menu">
+                <p class="header__logo">Hello</p>
+                <div class="herder__menu__content -sns">
+                    <img class="herder__menu__content -sns__icon -twitter" src="image/twitter.png">
+                    <img class="herder__menu__content -sns__icon" src="image/insta.png">
+                </div>
+                <div class="herder__menu__content -menu">
+                    <a class="herder__menu__content -menu__content" href="#contact__jump">/CONTACT</a>
+                    <a class="herder__menu__content -menu__content" href="#works__jump">/WORKS</a>
+                    <a class="herder__menu__content -menu__content" href="#service__jump">/SERVICE</a>
+                    <a class="herder__menu__content -menu__content" href="#about__jump">/ABOUT</a>
+                </div>
+            </div>
+            <img class="header__back" src="image/header3.jpg">
+        </header>
+<!--        ここまで-->
+        
+<!--        about-->
+        <div class="about">
+            <div id="about__jump"></div>
+            <p class="about__title">About</p>
+            <div class="about__main">
+                <div class="about__photobox">
+                    <div class="about__photobox__photo1">
+                    </div>
+                    <div class="about__photobox__photo2">
+                    </div>
+                </div>
+                <div class="about__main__content">
+                    <p class="about__main__name">Yoneyama Kazusa</p>
+                    <p class="about__main__txt">
+                        神奈川にて会社員としてシステムエンジニアの
+                        お仕事と個人でのweb制作をしております。<br><br>
+                        2018年4月よりプログラミングスクールにて
+                        Java・HTML・CSS等を学習。チームでショッピングサイトを構築する。<br>
+                        2018年8月より業務システムの開発プロジェクトに参画。
+                        テスト・バグ改修を担当。<br>
+                        2019年よりweb制作を始める。
+                    </p>
+                    <div class="about__main__skill">
+                        <div class="about__main__skill__peace">
+                            <p class="about__main__skill__peace__title">HTML</p>
+                            <div class="about__main__skill__peace__box">
+                                <div class="about__main__skill__peace__box__gage -high"></div>
+                            </div>
+                        </div>
+                        <div class="about__main__skill__peace">
+                            <p class="about__main__skill__peace__title">CSS</p>
+                            <div class="about__main__skill__peace__box">
+                                <div class="about__main__skill__peace__box__gage -high"></div>
+                            </div>
+                        </div>
+                        <div class="about__main__skill__peace">
+                            <p class="about__main__skill__peace__title">JavaScript</p>
+                            <div class="about__main__skill__peace__box">
+                                <div class="about__main__skill__peace__box__gage -low"></div>
+                            </div>
+                        </div>
+                        <div class="about__main__skill__peace -br">
+                            <p class="about__main__skill__peace__title">wordpress</p>
+                            <div class="about__main__skill__peace__box">
+                                <div class="about__main__skill__peace__box__gage -low"></div>
+                            </div>
+                        </div>
+                        <div class="about__main__skill__peace">
+                            <p class="about__main__skill__peace__title">Java</p>
+                            <div class="about__main__skill__peace__box">
+                                <div class="about__main__skill__peace__box__gage -high"></div>
+                            </div>
+                        </div>
+                        <div class="about__main__skill__peace">
+                            <p class="about__main__skill__peace__title">PHP</p>
+                            <div class="about__main__skill__peace__box">
+                                <div class="about__main__skill__peace__box__gage -low"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--        ここまで-->
+        
+<!--        service-->
+        <div class="service">
+            <div id="service__jump"></div>
+            <p class="service__title">Service</p>
+            <p class="service__txt">
+                デザインから<br>
+                HTML、CSS、JavaScript コーディングまで、<br>
+                ウェブサイト制作全般に対応いたします。
+            </p>
+            <div class="service__contentbox">
+                <div class="service__content">
+                    <img class="service__content__icon" src="image/pencil.jpg">
+                    <p class="service__content__titlejp">ディレクション</p>
+                    <p class="service__content__titleen">direction</p>
+                    <p class="service__content__description">
+                        お客様の要望をヒアリングし、現状の問題点を洗い出し、効果的なプランを作成いたします。制作ではデザインに入る前の事前の準備が特に重要になります。何が必要で何が必要でないのかを判断し、費用対効果の高いWebサイトを作るための土台を作ります。
+                    </p>
+                </div>
+                <div class="service__content">
+                    <img class="service__content__icon" src="image/mouse.jpg">
+                    <p class="service__content__titlejp">デザイン</p>
+                    <p class="service__content__titleen">design</p>
+                    <p class="service__content__description">
+                        ヒアリングに基づいたプランに沿っ
+                        て、デザインを作成いたします。人
+                        の使うものであることを常に意識し
+                        て、使う人が迷わない、目的を達成
+                        できるデザインを心がけています。
+                        インターフェースの重要性が増す中
+                        でデザインの役割を理解し、そのプ
+                        ランに最適な提案をさせていただきます。
+                    </p>
+                </div>
+                <div class="service__content">
+                    <img class="service__content__icon" src="image/keyboard.jpg">
+                    <p class="service__content__titlejp">コーディング</p>
+                    <p class="service__content__titleen">coding</p>
+                    <p class="service__content__description">
+                        デザインの意図を理解し、動きや効
+                        果を適切に使用することでWebサイ
+                        トの仕上がりは大きく変わります。
+                        ワードプレスを使用した更新性の高
+                        いサイト、Javascriptを使用した動
+                        きのあるサイトなど、様々なサイト
+                        のコーディングを行っております。
+                    </p>
+                </div>
+            </div>
+<!--        ここまで-->
+<!--            works-->
+            <div class="works">
+                <div id="works__jump"></div>
+                <p class="works__title">Works</p>
+                <div class="works__content">
+                    <img class="works__content__image -one" src="image/works.jpg">
+                    <div class="works__content__txt -one">
+                        <p class="works__content__txt__tite">title</p>
+                        <p class="works__content__txt__subtite">subtitle</p>
+                        <p class="works__content__txt__description">
+                        テキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキスト
+                        </p>
+                    </div>
+                </div>
+                <div class="works__content">
+                    <img class="works__content__image -two" src="image/works2.jpg">
+                    <div class="works__content__txt -two">
+                        <p class="works__content__txt__tite">title</p>
+                        <p class="works__content__txt__subtite">subtitle</p>
+                        <p class="works__content__txt__description">
+                        テキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキスト
+                        </p>
+                    </div>
+                </div>
+            </div>
+<!--            ここまで-->
+<!--            contact-->
+            <div class="contact">
+                <div id="contact__jump"></div>
+                <div class="contact__content">
+                    <p class="contact__content__title">Contact</p>
+                    <p class="contact__content__txt -one">
+                        制作の依頼・ご相談など<br>
+                        お気軽に下記メールアドレスまでご連絡ください。
+                    </p>
+                    <div class="contact__content__mail">
+                        <img class="contact__content__mail__icon" src="image/mail.png">
+                        <p class="contact__content__mail__address">aaaaa@aaa.com</p>
+                    </div>
+                    <p class="contact__content__txt -two">
+                        翌営業日までに返信いたします。
+                    </p>
+                </div>
+            </div>
+<!--            ここまで-->
+            <footer class="footer">
+                <p class="footer__txt">copyright © 2019 kazusa all rights reserved.</p>
+            </footer>
+    </body>
+</html>
