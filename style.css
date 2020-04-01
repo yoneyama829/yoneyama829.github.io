@@ -23,7 +23,8 @@ a:hover { color:rgba(0,0,0,0.5); }
 /*-----------------header-------------------*/
 .header{
     width:96vw;
-    height:115vh;
+    height:auto;
+    margin-bottom:100px;
 }
 
 .header__back{
@@ -63,7 +64,7 @@ a:hover { color:rgba(0,0,0,0.5); }
 /*herder__menu__content__right*/
 .herder__menu__content.-menu{
     float:right;
-    width:330px;
+    width:150px;
     height:54px;
     line-height:54px;
 }
@@ -75,30 +76,6 @@ a:hover { color:rgba(0,0,0,0.5); }
     margin:0 10px;
     text-decoration:none;
     float:left;
-}
-
-/*header menu sns*/
-.herder__menu__content.-sns{
-    width:70px;
-    height:35px;
-    float:right;
-    margin-top:19px;
-    margin-right:10px;
-}
-.herder__menu__content.-sns__icon{
-    width:15px;
-    padding-right:15px;
-    opacity:0.7;
-    float:right;
-}
-
-.herder__menu__content.-sns__icon.-twitter{
-    padding-top:1px;
-    height:13.5px;
-}
-
-.herder__menu__content.-sns__icon:hover{
-    opacity:0.4;
 }
 
 /*header txt*/
@@ -123,7 +100,8 @@ a:hover { color:rgba(0,0,0,0.5); }
 /*-------------------About--------------------*/
 .about{
     width:96vw;
-    min-height:100vh;
+    height:auto;
+    margin-bottom:100px;
     clear:both;
 }
 
@@ -223,66 +201,16 @@ a:hover { color:rgba(0,0,0,0.5); }
     transition:0.7s;
 }
 
-/*-----------service-----------*/
-.service{
-    width:96vw;
-    min-height:700px;
-    text-align:center;
-}
-
-/*service title*/
-.service__title{
-    width:200px;
-    height:50px;
+.clear__float{
     clear:both;
-    font-size:30px;
-    margin:0 auto;
-    margin-bottom:30px;
-    border-bottom:1px solid;
-}
-.service__txt{
-    margin-top:0;
-    font-size:15px;
-    margin-bottom:20px;
-}
-
-/*service content*/
-.service__contentbox{
-    width:840px;
-    height:550px;
-    margin:0 auto;
-}
-.service__content{
-    width:200px;
-    height:447px;
-    float:left;
-    margin-right:40px;
-    margin-left:40px;
-}
-
-.service__content__icon{
-    width:125px;
-    opacity:0.7;
-}
-.service__content__titlejp{
-    font-size:24px;
-    line-height:0;
-}
-.service__content__titleen{
-    font-size:15px;
-    line-height:0;
-    padding-bottom:15px;
-}
-.service__content__description{
-    font-size:12px;
 }
 
 /*-------------works------------*/
 .works{
     width:96vw;
-    min-height:850px;
-    text-align:center;
+    height:auto;
     margin-bottom:100px;
+    text-align:center;
 }
 
 #works__jump{
@@ -355,57 +283,6 @@ a:hover { color:rgba(0,0,0,0.5); }
     margin-top:30px;
 }
 
-/*-----------contact----------*/
-.contact{
-    width:96vw;
-    height:400px;
-    text-align:center;
-    clear:both;
-    margin-bottom:100px:
-}
-
-/*contact__content*/
-.contact__content{
-    width:499px;
-    min-height:430px;
-    padding-top:5px;
-    margin:100px auto;
-}
-
-.contact__content__title{
-    width:200px;
-    height:50px;
-    border-bottom:1px solid;
-    font-size:30px;
-    margin:0 auto;
-    margin-bottom:100px;
-}
-
-.contact__content__txt{
-    font-size:12px;
-    clear:both;
-}
-
-.contact__content__mail{
-    width:300px;
-    height:30px;
-    margin:0 auto;
-}
-
-.contact__content__mail__icon{
-    width:30px;
-    opacity:0.7;
-    float:left;
-}
-
-.contact__content__mail__address{
-    font-size:30px;
-    line-height:30px;
-    margin-top:0;
-    padding-left:20px;
-    float:left;
-}
-
 /*----------footer------------*/
 .footer{
     width:96vw;
@@ -424,7 +301,8 @@ a:hover { color:rgba(0,0,0,0.5); }
 /*-------------------About--------------------*/
 /*about main*/
 .about{
-    height:1100px;
+    height:auto;
+    margin-bottom:100px;
 }
 .about__main{
     width:499px;
@@ -462,29 +340,10 @@ a:hover { color:rgba(0,0,0,0.5); }
     width:499px;
 }   
 
-/*-----------service-----------*/
-/*service content*/
-.service__contentbox{
-    width:499px;
-    min-height:450px;
-}
-.service__content{
-    width:150px;
-    height:447px;
-    margin-right:8px;
-    margin-left:8px;
-}
-
-.service__content__icon{
-    width:100px;
-}
-.service__content__titlejp{
-    font-size:18px;
-}
-
 /*-------------works------------*/
 .works{
-    min-height:850px;
+    height:auto;
+    margin-bottom:100px;
 }
 
 /*works content*/
@@ -558,7 +417,7 @@ a:hover { color:rgba(0,0,0,0.5); }
 /*about main*/
 .about__main{
     width:350px;
-    height:800px;
+    height:auto;
     margin-bottom:100px;
     clear:both;
 }
@@ -614,23 +473,9 @@ a:hover { color:rgba(0,0,0,0.5); }
     height:34px;
 }
     
-
-/*-----------service-----------*/
-/*service content*/
-.service__contentbox{
-    width:200px;
-    height:1350px;
-}
-.service__content{
-    width:200px;
-    height:auto;
-    clear:both;
-    margin:10px auto;
-}
-    
 /*-------------works------------*/
 .works{
-    min-height:850px;
+    height:auto;
     text-align:center;
     margin-bottom:100px;
 }
@@ -675,13 +520,4 @@ a:hover { color:rgba(0,0,0,0.5); }
     clear:both;
 }
 
-    
-/*-----------contact----------*/
-/*contact__content*/
-.contact__content{
-    width:250px;
-    height:300px;
-    padding-top:5px;
-    margin:100px auto;
-}
 }

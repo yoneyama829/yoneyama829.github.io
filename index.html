@@ -63,7 +63,7 @@
                 $(window).on('scroll',function(){
                     highgage.each(function(){
                         var scroll=$(window).scrollTop();
-                        if(scroll > 600){
+                        if(scroll > 700){
                             $(this).css({
                                 'width':'60%'
                             });
@@ -72,7 +72,7 @@
                 var lowgage=$(".about__main__skill__peace__box__gage.-low");
                 lowgage.each(function(){
                     var scroll=$(window).scrollTop();
-                        if(scroll > 600){
+                        if(scroll > 700){
                             $(this).css({
                                 'width':'30%'
                             });
@@ -112,15 +112,9 @@
                         <span></span>
                         <span></span>
                     </div>
-                    <div class="herder__menu__content -sns">
-                        <img class="herder__menu__content -sns__icon -twitter" src="image/twitter.png">
-                        <img class="herder__menu__content -sns__icon" src="image/insta.png">
-                    </div>
                     <div class="herder__menu__content -menu">
                         <a class="herder__menu__content -menu__content" href="#about__jump">/ABOUT</a>
-                        <a class="herder__menu__content -menu__content" href="#service__jump">/SERVICE</a>
                         <a class="herder__menu__content -menu__content" href="#works__jump">/WORKS</a>
-                        <a class="herder__menu__content -menu__content" href="#contact__jump">/CONTACT</a>
                     </div>
                 </div>
             </div>
@@ -142,12 +136,9 @@
                 <div class="about__main__content">
                     <p class="about__main__name">Yoneyama Kazusa</p>
                     <p class="about__main__txt">
-                        東京にて会社員としてシステムエンジニアの
-                        お仕事と個人でのweb制作をしております。<br><br>
-                        2018年4月よりプログラミングスクールにて
-                        Java・HTML・CSS等を学習。チームでショッピングサイトを構築する。<br>
-                        2018年8月より業務システムの開発プロジェクトに参画。<br>
-                        2019年よりweb制作を始める。
+                        2018年4月から2018年6月までの3ヶ月間、インターノウス株式会社プログラマーカレッジにて、ECサイトの制作を通してJava、HTML5、CSS3、JavaScript、SQLなどの学習を行いました。<br>
+                        その後2018年7月より派遣社員として3社経験いたしまして、デバッガー、テスター、テスト設計、プログラマー(主にJava,Python,JavaScriptを使用)の業務を担当いたしました。<br><br>
+                        自宅ではHTML、CSS、JavaScript、PHPを用いてWeb制作の学習を1年ほど行っておりました。短期ではありますが、Photoshop、Illustrator、WordPressの学習も行っております。
                     </p>
                     <div class="about__main__skill">
                         <div class="about__main__skill__peace">
@@ -168,14 +159,14 @@
                                 <div class="about__main__skill__peace__box__gage -low"></div>
                             </div>
                         </div>
-                        <div class="about__main__skill__peace -br">
-                            <p class="about__main__skill__peace__title">wordpress</p>
+                        <div class="about__main__skill__peace">
+                            <p class="about__main__skill__peace__title">Java</p>
                             <div class="about__main__skill__peace__box">
-                                <div class="about__main__skill__peace__box__gage -low"></div>
+                                <div class="about__main__skill__peace__box__gage -high"></div>
                             </div>
                         </div>
                         <div class="about__main__skill__peace">
-                            <p class="about__main__skill__peace__title">Java</p>
+                            <p class="about__main__skill__peace__title">Python</p>
                             <div class="about__main__skill__peace__box">
                                 <div class="about__main__skill__peace__box__gage -high"></div>
                             </div>
@@ -186,116 +177,72 @@
                                 <div class="about__main__skill__peace__box__gage -low"></div>
                             </div>
                         </div>
+                        <div class="about__main__skill__peace -br">
+                            <p class="about__main__skill__peace__title">wordpress</p>
+                            <div class="about__main__skill__peace__box">
+                                <div class="about__main__skill__peace__box__gage -low"></div>
+                            </div>
+                        </div>
+                        <div class="about__main__skill__peace">
+                            <p class="about__main__skill__peace__title">PhotoShop</p>
+                            <div class="about__main__skill__peace__box">
+                                <div class="about__main__skill__peace__box__gage -low"></div>
+                            </div>
+                        </div>
+                        <div class="about__main__skill__peace">
+                            <p class="about__main__skill__peace__title">illustrator</p>
+                            <div class="about__main__skill__peace__box">
+                                <div class="about__main__skill__peace__box__gage -low"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="clear__float"></div>
             </div>
         </div>
 <!--        ここまで-->
         
-<!--        service-->
-        <div class="service">
-            <div id="service__jump"></div>
-            <p class="service__title">Service</p>
-            <p class="service__txt">
-                デザインから<br>
-                HTML、CSS、JavaScript コーディングまで、<br>
-                ウェブサイト制作全般に対応いたします。
-            </p>
-            <div class="service__contentbox">
-                <div class="service__content">
-                    <img class="service__content__icon" src="image/pencil.jpg">
-                    <p class="service__content__titlejp">ディレクション</p>
-                    <p class="service__content__titleen">direction</p>
-                    <p class="service__content__description">
-                        お客様の要望をヒアリングし、現状の問題点を洗い出し、効果的なプランを作成いたします。制作ではデザインに入る前の事前の準備が特に重要になります。何が必要で何が必要でないのかを判断し、費用対効果の高いWebサイトを作るための土台を作ります。
-                    </p>
-                </div>
-                <div class="service__content">
-                    <img class="service__content__icon" src="image/mouse.jpg">
-                    <p class="service__content__titlejp">デザイン</p>
-                    <p class="service__content__titleen">design</p>
-                    <p class="service__content__description">
-                        ヒアリングに基づいたプランに沿っ
-                        て、デザインを作成いたします。人
-                        の使うものであることを常に意識し
-                        て、使う人が迷わない、目的を達成
-                        できるデザインを心がけています。
-                        インターフェースの重要性が増す中
-                        でデザインの役割を理解し、そのプ
-                        ランに最適な提案をさせていただきます。
-                    </p>
-                </div>
-                <div class="service__content">
-                    <img class="service__content__icon" src="image/keyboard.jpg">
-                    <p class="service__content__titlejp">コーディング</p>
-                    <p class="service__content__titleen">coding</p>
-                    <p class="service__content__description">
-                        デザインの意図を理解し、動きや効
-                        果を適切に使用することでWebサイ
-                        トの仕上がりは大きく変わります。
-                        ワードプレスを使用した更新性の高
-                        いサイト、Javascriptを使用した動
-                        きのあるサイトなど、様々なサイト
-                        のコーディングを行っております。
-                    </p>
-                </div>
-            </div>
-<!--        ここまで-->
 <!--            works-->
             <div class="works">
                 <div id="works__jump"></div>
                 <p class="works__title">Works</p>
                 <div class="works__content">
-                    <img class="works__content__image -one" src="image/works.jpg">
+                    <img class="works__content__image -one" src="image/business_card.jpg">
                     <div class="works__content__txt -one">
-                        <p class="works__content__txt__tite">title</p>
-                        <p class="works__content__txt__subtite">subtitle</p>
+                        <p class="works__content__txt__tite">Business Card</p>
+                        <p class="works__content__txt__subtite">2020/3</p>
                         <p class="works__content__txt__description">
-                        テキストテキストテキストテキストテキスト
-                        テキストテキストテキストテキストテキスト
-                        テキストテキストテキストテキストテキスト
-                        テキストテキストテキストテキストテキスト
-                        テキストテキストテキストテキストテキスト
+                        illustratorとphotoshopを使用して、名刺のデザインとモックアップの作成を行いました。
                         </p>
                     </div>
                 </div>
                 <div class="works__content">
-                    <img class="works__content__image -two" src="image/works2.jpg">
+                    <img class="works__content__image -two" src="image/flyer.jpg">
                     <div class="works__content__txt -two">
-                        <p class="works__content__txt__tite">title</p>
-                        <p class="works__content__txt__subtite">subtitle</p>
+                        <p class="works__content__txt__tite">Flyer</p>
+                        <p class="works__content__txt__subtite">2020/3</p>
                         <p class="works__content__txt__description">
-                        テキストテキストテキストテキストテキスト
-                        テキストテキストテキストテキストテキスト
-                        テキストテキストテキストテキストテキスト
-                        テキストテキストテキストテキストテキスト
-                        テキストテキストテキストテキストテキスト
+                        illustratorとphotoshopを使用して、飲食店のチラシの模写とモックアップの作成を行いました。
+                        </p>
+                    </div>
+                </div>
+                <div class="works__content">
+                    <img class="works__content__image -one" src="image/portforio.jpg">
+                    <div class="works__content__txt -one">
+                        <p class="works__content__txt__tite">Portforio Site</p>
+                        <p class="works__content__txt__subtite">2019/3</p>
+                        <p class="works__content__txt__description">
+                        Adobe XDを使用しデザインを行い、ポートフォリオサイトの制作を行いました。タブレット、スマートフォンへのレスポンシブ対応も行っています。
                         </p>
                     </div>
                 </div>
             </div>
 <!--            ここまで-->
-<!--            contact-->
-            <div class="contact">
-                <div id="contact__jump"></div>
-                <div class="contact__content">
-                    <p class="contact__content__title">Contact</p>
-                    <p class="contact__content__txt -one">
-                        制作の依頼・ご相談など<br>
-                        お気軽に下記メールアドレスまでご連絡ください。
-                    </p>
-                    <div class="contact__content__mail">
-                        <img class="contact__content__mail__icon" src="image/mail.png">
-                        <p class="contact__content__mail__address">aaaaa@aaa.com</p>
-                    </div>
-                    <p class="contact__content__txt -two">
-                        翌営業日までに返信いたします。
-                    </p>
-                </div>
-            </div>
-<!--            ここまで-->
+
+<!--        footer-->
             <footer class="footer">
                 <p class="footer__txt">copyright © 2019 kazusa all rights reserved.</p>
             </footer>
+<!--            ここまで-->
     </body>
 </html>
