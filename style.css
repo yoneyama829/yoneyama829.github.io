@@ -127,23 +127,15 @@ a:hover { color:rgba(0,0,0,0.5); }
     margin-top:30px;
     display:inline-block;
     width:350px;
-    height:350px;
+    height:255px;
     margin-right:50px;
     float:left;
 }
 .about__photobox__photo1{
     width:350px;
-    height:215px;
-    background:url("image/profile3.jpg") no-repeat center/100%;
-    object-fit:cover;
+    height:255px;
+    background:url("image/profile3.jpg") no-repeat center/120%;
     margin-bottom:5px;
-}
-
-.about__photobox__photo2{
-    width:350px;
-    height:130px;
-    background:url("image/profile3.jpg") no-repeat center/100%;
-    object-fit:cover;
 }
 
 /*about main content*/
@@ -312,8 +304,8 @@ a:hover { color:rgba(0,0,0,0.5); }
 /*--------about photo*/
 .about__photobox{
     width:499px;
-    height:380px;
     margin:0 auto;
+    margin-bottom:50px;
     clear:both;
 }
     
